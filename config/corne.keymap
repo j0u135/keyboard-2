@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E  &kp R             &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D  &kp F             &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C  &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LEFT_CONTROL
-                         &mo 2  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &mo 1  &kp RALT
+&kp TAB           &kp Q  &kp W  &kp E  &kp R             &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D  &kp F             &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C  &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp ESC
+                                &mo 2  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &mo 1  &kp RALT
             >;
         };
 
@@ -50,10 +50,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp BACKSLASH  &kp EXCL  &kp DOUBLE_QUOTES  &kp HASH  &kp DLLR  &kp PRCNT    &kp AMPS   &kp SLASH  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL      &trans    &kp AT             &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp SEMI  &kp GRAVE
-&kp LSHFT      &trans    &trans             &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                            &trans    &trans    &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TILDE          &kp EXCL  &kp AT            &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY     &kp LPAR           &kp RPAR               &kp RS(N0)
+&kp RS(BACKSLASH)  &trans    &kp LA(NUMBER_2)  &trans    &trans    &trans       &trans     &kp RS(MINUS)  &kp LA(LBKT)        &kp LA(RBKT)       &kp RS(RIGHT_BRACKET)  &kp LEFT_BRACKET
+&kp LSHFT          &trans    &trans            &trans    &trans    &trans       &trans     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &kp TILDE
+                                               &trans    &trans    &kp SPACE    &kp RET    &trans         &kp RALT
             >;
         };
     };
