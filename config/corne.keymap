@@ -20,10 +20,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R             &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P      &kp BSPC
-&kp TAB     &kp A  &kp S  &kp D  &kp F             &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C  &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
-                          &mo 2  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &mo 1  &kp RALT
+&kp ESCAPE  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P      &kp BSPC
+&kp TAB     &kp A  &kp S  &kp D         &kp F             &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+                          &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &mo 1  &mo 2
             >;
         };
 
@@ -50,7 +50,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE          &kp EXCL  &kp AT            &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp KP_MULTIPLY     &kp LPAR           &kp RPAR               &kp RS(N0)
+&kp TILDE          &kp EXCL  &kp AT            &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp LS(N8)          &kp RS(N9)         &kp LS(N0)             &trans
 &kp RS(BACKSLASH)  &trans    &kp LA(NUMBER_2)  &trans    &trans            &trans       &trans     &kp RS(MINUS)  &kp LA(LBKT)        &kp LA(RBKT)       &kp RS(RIGHT_BRACKET)  &kp LEFT_BRACKET
 &kp LSHFT          &trans    &trans            &trans    &trans            &trans       &trans     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &kp TILDE
                                                &trans    &kp LEFT_CONTROL  &kp SPACE    &kp RET    &trans         &kp RALT
