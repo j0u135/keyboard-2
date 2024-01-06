@@ -5,7 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -35,10 +34,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1  &kp N2  &kp N3        &kp N4    &kp N5       &kp N6   &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
-&bt BT_CLR  &kp N6  &kp N7  &kp N8        &kp N9    &kp N0       &trans   &trans          &kp UP_ARROW    &trans           &trans  &trans
-&kp LSHFT   &trans  &trans  &trans        &trans    &trans       &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-                            &kp LEFT_ALT  &kp LGUI  &kp SPACE    &kp RET  &trans          &kp RALT
+&trans     &kp N1  &kp N2  &kp N3        &kp N4    &kp N5       &kp N6   &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
+&trans     &kp N6  &kp N7  &kp N8        &kp N9    &kp N0       &trans   &trans          &kp UP_ARROW    &trans           &trans  &trans
+&kp LSHFT  &trans  &trans  &trans        &trans    &trans       &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+                           &kp LEFT_ALT  &kp LGUI  &kp SPACE    &kp RET  &trans          &kp RALT
             >;
         };
 
@@ -50,9 +49,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE          &kp EXCL  &kp AT            &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp LS(N8)          &kp RS(N9)         &kp LS(N0)             &trans
-&kp RS(BACKSLASH)  &trans    &kp LA(NUMBER_2)  &trans    &trans            &trans       &trans     &kp RS(MINUS)  &kp LA(LBKT)        &kp LA(RBKT)       &kp RS(RIGHT_BRACKET)  &kp LEFT_BRACKET
-&kp LSHFT          &trans    &trans            &trans    &trans            &trans       &trans     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &kp TILDE
+&kp LA(NUMBER_1)  &kp EXCL   &kp AT            &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp LS(N8)          &kp RS(N9)         &kp LS(N0)             &trans
+&kp LA(TILDE)     &trans     &kp LA(NUMBER_2)  &trans    &trans            &trans       &trans     &kp RS(MINUS)  &kp LA(LBKT)        &kp LA(RBKT)       &kp RS(RIGHT_BRACKET)  &kp LEFT_BRACKET
+&kp LSHFT         &kp GRAVE  &kp LS(GRAVE)     &trans    &trans            &trans       &trans     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &kp TILDE
                                                &trans    &kp LEFT_CONTROL  &kp SPACE    &kp RET    &trans         &kp RALT
             >;
         };
