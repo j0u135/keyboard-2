@@ -51,7 +51,7 @@
             bindings = <
 &kp LA(NUMBER_1)  &kp EXCL   &kp AT            &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET  &kp AMPERSAND  &kp LS(N8)          &kp RS(N9)         &kp LS(N0)             &trans
 &kp LA(TILDE)     &trans     &kp LA(NUMBER_2)  &trans    &trans            &trans       &trans     &kp RS(MINUS)  &kp LA(LBKT)        &kp LA(RBKT)       &kp RS(RIGHT_BRACKET)  &kp LEFT_BRACKET
-&trans            &kp GRAVE  &kp LS(GRAVE)     &trans    &trans            &trans       &trans     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &kp TILDE
+&trans            &kp GRAVE  &kp LS(GRAVE)     &trans    &trans            &trans       &trans     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &trans
                                                &trans    &kp LEFT_CONTROL  &kp SPACE    &kp RET    &trans         &kp RALT
             >;
         };
