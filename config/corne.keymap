@@ -8,6 +8,15 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        ene: ene {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(N) &kp N>;
+            label = "ENE";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -21,7 +30,7 @@
             bindings = <
 &kp ESCAPE  &kp Q  &kp W  &kp E         &kp R             &kp T        &kp Y    &kp U  &kp I      &kp O    &kp P      &kp BSPC
 &kp TAB     &kp A  &kp S  &kp D         &kp F             &kp G        &kp H    &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT   &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_SHIFT
+&kp LSHFT   &kp Z  &kp X  &kp C         &kp V             &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp RIGHT_SHIFT
                           &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE    &kp RET  &mo 1  &mo 2
             >;
         };
@@ -34,10 +43,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3        &kp N4    &kp N5       &kp N6   &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
-&trans  &kp N6  &kp N7  &kp N8        &kp N9    &kp N0       &trans   &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &trans  &trans  &trans        &trans    &trans       &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-                        &kp LEFT_ALT  &kp LGUI  &kp SPACE    &kp RET  &trans          &kp RALT
+&trans  &kp N1  &kp N2  &kp N3        &kp N4  &kp N5       &kp N6   &kp N7          &kp N8          &kp N9           &kp N0  &kp BSPC
+&trans  &kp N6  &kp N7  &kp N8        &kp N9  &kp N0       &trans   &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans       &ene     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+                        &kp LEFT_ALT  &trans  &kp SPACE    &kp RET  &trans          &kp RALT
             >;
         };
 
@@ -49,10 +58,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LA(NUMBER_1)  &kp EXCL   &kp AT            &kp HASH  &kp DLLR          &kp PRCNT    &kp CARET             &kp AMPERSAND  &kp LS(N8)          &kp RS(N9)         &kp LS(N0)             &trans
-&kp LA(TILDE)     &trans     &kp LA(NUMBER_2)  &trans    &trans            &trans       &kp LS(LEFT_BRACKET)  &kp RS(MINUS)  &kp LA(LBKT)        &kp LA(RBKT)       &kp RS(RIGHT_BRACKET)  &kp LEFT_BRACKET
-&trans            &kp GRAVE  &kp LS(GRAVE)     &trans    &trans            &trans       &kp LA(SEMICOLON)     &kp RS(EQUAL)  &kp RA(APOSTROPHE)  &kp RA(BACKSLASH)  &kp RIGHT_BRACKET      &trans
-                                               &trans    &kp LEFT_CONTROL  &kp SPACE    &kp RET               &trans         &kp RALT
+&kp PIPE       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DLLR  &kp PRCNT    &kp AMPS   &kp SLASH      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
+&kp BACKSLASH  &trans           &kp AT             &trans            &trans    &trans       &kp TILDE  &kp QUESTION   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &kp GRAVE
+&trans         &kp LESS_THAN    &kp GREATER_THAN   &trans            &trans    &kp CARET    &kp CARET  &kp RS(EQUAL)  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS   &trans
+                                                   &kp LEFT_CONTROL  &trans    &kp SPACE    &kp RET    &trans         &kp RALT
             >;
         };
     };
