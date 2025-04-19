@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -58,10 +59,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp PIPE       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DLLR  &kp PRCNT    &kp AMPS   &kp SLASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
-&kp BACKSLASH  &trans           &kp AT             &trans            &kp SEMI  &kp COLON    &kp TILDE  &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &kp GRAVE
-&trans         &kp LESS_THAN    &kp GREATER_THAN   &trans            &trans    &trans       &kp CARET  &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS   &trans
-                                                   &kp LEFT_CONTROL  &trans    &kp SPACE    &kp RET    &trans            &kp RALT
+&kp PIPE       &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH    &kp DLLR    &kp PRCNT    &kp AMPS   &kp SLASH         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &trans
+&kp BACKSLASH  &trans           &kp AT             &trans      &kp SEMI    &kp COLON    &kp TILDE  &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &kp GRAVE
+&trans         &kp LESS_THAN    &kp GREATER_THAN   &trans      &trans      &trans       &kp CARET  &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS   &trans
+                                                   &bt BT_NXT  &bt BT_PRV  &kp SPACE    &kp RET    &trans            &trans
             >;
         };
     };
