@@ -18,6 +18,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        gff {
+            bindings = <&mo 3>;
+            key-positions = <41 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -44,10 +53,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans      &kp N1      &kp N2      &kp N3  &kp N4  &kp N5    &kp N6  &kp N7          &kp N8          &kp N9           &kp N0  &trans
-&trans      &kp N6      &kp N7      &kp N8  &kp N9  &kp N0    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&bt BT_CLR  &bt BT_NXT  &bt BT_PRV  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-                                    &trans  &trans  &trans    &trans  &trans          &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7          &kp N8          &kp N9           &kp N0  &trans
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
 
@@ -63,6 +72,15 @@
 &kp BACKSLASH  &trans           &kp AT             &trans            &kp SEMI  &kp COLON    &kp TILDE  &kp QUESTION      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTRK  &kp GRAVE
 &trans         &kp LESS_THAN    &kp GREATER_THAN   &trans            &trans    &trans       &kp CARET  &kp SINGLE_QUOTE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS   &trans
                                                    &kp LEFT_CONTROL  &trans    &trans       &kp RET    &trans            &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans      &trans            &trans  &trans  &trans  &trans  &trans  &trans
+                        &bt BT_NXT  &bt BT_PRV  &bt BT_CLR_ALL    &trans  &trans  &trans
             >;
         };
     };
